@@ -1,2 +1,2 @@
-Hello from the project task for this summer training.
+Hello from leetCode project that I put my solutions for the problems that I solve
 This is the first version!
