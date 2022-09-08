@@ -1,4 +1,3 @@
-
-from three_sum import three_sum
+from three_sum import ThreeSum
 
 

@@ -1,7 +1,8 @@
 from typing import List
 
 
-class three_sum:
+# LeetCode problem link: https://leetcode.com/problems/3sum/
+class ThreeSum:
     def three_sum_func(self, nums: List[int]) -> List[List[int]]:
 
         nums.sort()
@@ -30,6 +31,7 @@ class three_sum:
                     beginning += 1
         return res
 
+
 if __name__ == "__main__":
-    three_sum_object = three_sum()
+    three_sum_object = ThreeSum()
     print(three_sum_object.three_sum_func([-1, 0, 1, 2, -1, -4]))
