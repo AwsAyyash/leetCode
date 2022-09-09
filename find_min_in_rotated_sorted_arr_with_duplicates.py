@@ -7,21 +7,27 @@ from typing import List
 def minimum_value(nums: List[int]) -> int:
     beg = 0
     end = len(nums) - 1
-    min_val = float('inf')
-    while beg <= end:
+    # min_val = nums[0]
+    while beg < end:
         mid = (beg + end) / 2
         mid = int(mid)
 
-        min_val = min(nums[mid], min_val)
+        #   min_val = min(nums[mid], min_val)
         if nums[end] < nums[mid]:  # the opposite way the un-normal case
 
             beg = mid + 1
 
+
+        elif nums[end] > nums[mid]:
+
+            end = mid
         else:
 
-            end = mid - 1
+            end -= 1
+            while nums[end] == nums[end - 1] and beg < end:
+                end -= 1
 
-    return min_val
+    return nums[beg]
 
 
 if __name__ == '__main__':
