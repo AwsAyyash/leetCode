@@ -1,2 +1,1 @@
-Hello from the second (not main) branch in this LeetCode problem-solving.
-This is the first version!
+Hello from leetCode project that I put my solutions for the problems that I solve.
